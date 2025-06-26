@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+<div class="container post-container my-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <article class="blog-post">
+        <header class="post-header mb-4">
+          <h1 class="post-title">{{ page.title }}</h1>
+          
+          <div class="post-meta d-flex align-items-center mb-3">
+            {% assign author = site.authors | where: "name", page.author | first %}
+            <div class="author-image me-2">
+              {% if author.avatar %}
+                <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="rounded-circle" width="40" height="40">
+              {% else %}
+                <img src="{{ '/assets/images/avatar-default.jpg' | relative_url }}" alt="{{ author.name }}" class="rounded-circle" width="40" height="40">
+              {% endif %}
+            </div>
+            
+            <div class="author-info">
+              <div>
+                <a href="{{ author.url }}" class="author-name">{{ author.display_name }}</a>
+              </div>
+              <div class="post-date">
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                  {{ page.date | date: "%d/%m/%Y" }}
+                </time>
+                &bull; 
+                <span class="reading-time">
+                  {% assign words = content | number_of_words %}
+                  {% if words < 360 %}
+                    1 min de leitura
+                  {% else %}
+                    {{ words | divided_by: 180 }} mins de leitura
+                  {% endif %}
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          {% if page.image %}
+          <div class="post-featured-image mb-4">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded">
+          </div>
+          {% endif %}
+        </header>
+        
+        <div class="post-content">
+          {{ content }}
+        </div>
+        
+        <div class="post-tags mt-4">
+          {% if page.tags %}
+            {% for tag in page.tags %}
+              <a href="/tags/{{ tag | slugify }}/" class="badge bg-light text-dark text-decoration-none me-1">{{ tag }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
+        
+        <div class="post-share mt-4">
+          {% include share-buttons.html %}
+        </div>
+        
+        <div class="post-author-bio mt-5 p-4 bg-light rounded">
+          <div class="d-flex">
+            <div class="author-image me-3">
+              {% if author.avatar %}
+                <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="rounded-circle" width="80" height="80">
+              {% else %}
+                <img src="{{ '/assets/images/avatar-default.jpg' | relative_url }}" alt="{{ author.name }}" class="rounded-circle" width="80" height="80">
+              {% endif %}
+            </div>
+            <div class="author-bio">
+              <h5 class="author-name mb-2">
+                <a href="{{ author.url }}">{{ author.display_name }}</a>
+              </h5>
+              <p>{{ author.bio }}</p>
+              <div class="author-social">
+                {% if author.website %}
+                  <a href="{{ author.website }}" class="me-2" target="_blank"><i class="fas fa-globe"></i></a>
+                {% endif %}
+                {% if author.twitter %}
+                  <a href="{{ author.twitter }}" class="me-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                {% endif %}
+                {% if author.linkedin %}
+                  <a href="{{ author.linkedin }}" class="me-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <hr class="my-5">
+      
+      {% if site.related_posts.size > 0 %}
+        <div class="related-posts">
+          <h3 class="mb-4">Posts relacionados</h3>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% for post in site.related_posts limit:4 %}
+              <div class="col">
+                {% include post-card.html post=post %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      
+      <div class="post-comments mt-5">
+        <h3 class="mb-4">Comentários</h3>
+        <!-- Disqus or other comment system would go here -->
+      </div>
+    </div>
+  </div>
+</div>

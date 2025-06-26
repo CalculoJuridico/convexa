@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <div class="convexa-logo d-flex align-items-center">
+        <img src="{{ '/assets/images/logos/icon.png' | relative_url }}" alt="Convexa - Educação Empreendedora" class="navbar-logo" style="height: 40px;">
+        <span class="ms-2 fw-bold d-none d-md-inline" style="color: #153D5C; font-family: Inter, sans-serif; font-size: 1.2rem;">Convexa</span>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == item.link %} active{% endif %}" href="{{ item.link | relative_url }}">
+              {% if item.icon %}<i class="{{ item.icon }} me-1"></i>{% endif %}{{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill ms-lg-3" href="#contact">Começar Agora</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="navbar-spacer"></div>

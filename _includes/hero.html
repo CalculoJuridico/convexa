@@ -1,0 +1,634 @@
+<section class="hero-section position-relative overflow-hidden">
+  <!-- Background with gradient -->
+  <div class="hero-background"></div>
+  
+  <!-- Floating elements -->
+  <div class="floating-elements">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+  </div>
+  
+  <div class="container">
+    <div class="row align-items-center" style="min-height: 85vh;">
+      <!-- Left side - Content -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="hero-content">
+          <div class="hero-badge mb-4">
+            <span class="badge-icon">
+              <i class="fas fa-sparkles"></i>
+            </span>
+            <span class="badge-text">Educação Empreendedora com Impacto Real</span>
+          </div>
+          
+          <h1 class="hero-title mb-4">
+            Transforme Seu
+            <span class="text-gradient">Negócio</span>
+            com Convexa
+          </h1>
+          
+          <p class="hero-subtitle mb-5">
+            Educação empreendedora especializada para advogados e profissionais do direito. 
+            Mentorias, masterminds, consultorias e soluções tecnológicas com IA para escalar seu negócio.
+          </p>
+          
+          <div class="hero-features mb-5">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Mentorias Estratégicas</strong>
+                <span>Acompanhamento personalizado com resultados reais</span>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Masterminds Exclusivos</strong>
+                <span>Conecte-se com empreendedores de alta performance</span>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Inteligência Artificial</strong>
+                <span>Use IA para automatizar e escalar seu escritório</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-cta">
+            <button class="btn btn-primary btn-hero" onclick="scrollToForm()">
+              <span class="btn-text">Começar Agora</span>
+              <span class="btn-icon">
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </button>
+            
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">90K+</div>
+                <div class="stat-label">Profissionais</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfação</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">Resultado</div>
+                <div class="stat-label">Garantido</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right side - Form Card -->
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="hero-form-wrapper">
+          <div class="hero-form-card" id="case-form">
+            <div class="form-header">
+              <div class="form-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3 class="form-title">Transforme Seu Negócio</h3>
+              <p class="form-subtitle">
+                Preencha os dados e descubra como nossa educação empreendedora pode escalar seu escritório.
+              </p>
+            </div>
+            
+            <form id="heroForm" class="form-body">
+              <div class="form-group">
+                <label class="form-label">Nome completo</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Seu nome completo" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="seu@email.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">Interesse Principal</label>
+                <select id="serviceType" class="form-control" required>
+                  <option value="">Selecione seu foco</option>
+                  <option value="Mentoria">Mentoria Estratégica</option>
+                  <option value="Mastermind">Mastermind de Alta Performance</option>
+                  <option value="Consultoria">Consultoria Personalizada</option>
+                  <option value="IA">Educação em IA para Advogados</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">OAB</label>
+                <input type="text" id="oabNumber" class="form-control" placeholder="Número da OAB" required>
+              </div>
+              
+              <button type="submit" class="btn btn-form-submit w-100">
+                <i class="fas fa-rocket me-2"></i>
+                Quero Transformar Meu Negócio
+                <div class="btn-shine"></div>
+              </button>
+            </form>
+            
+            <div class="form-footer">
+              <div class="security-badge">
+                <i class="fas fa-lock"></i>
+                <span>Seus dados estão protegidos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Enhanced Hero Section Styles -->
+<style>
+  .hero-section {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  .hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(103, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+    backdrop-filter: blur(1px);
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 20s infinite linear;
+  }
+  
+  .shape-1 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .shape-2 {
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    right: 15%;
+    animation-delay: -5s;
+  }
+  
+  .shape-3 {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    left: 80%;
+    animation-delay: -10s;
+  }
+  
+  .shape-4 {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    left: 30%;
+    animation-delay: -15s;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+    25% { transform: translateY(-20px) rotate(90deg); opacity: 1; }
+    50% { transform: translateY(-40px) rotate(180deg); opacity: 0.7; }
+    75% { transform: translateY(-20px) rotate(270deg); opacity: 1; }
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    animation: slideInLeft 1s ease 0.2s both;
+  }
+  
+  .badge-icon {
+    color: #FFD700;
+    margin-right: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    animation: slideInLeft 1s ease 0.4s both;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    animation: slideInLeft 1s ease 0.6s both;
+  }
+  
+  .hero-features {
+    animation: slideInLeft 1s ease 0.8s both;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: #FFD700;
+    font-size: 1.2rem;
+  }
+  
+  .feature-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-text strong {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  
+  .feature-text span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .hero-cta {
+    animation: slideInLeft 1s ease 1s both;
+  }
+  
+  .btn-hero {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 16px 32px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
+    margin-bottom: 2rem;
+  }
+  
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(255, 215, 0, 0.4);
+    color: #1a1a1a;
+  }
+  
+  .btn-text {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-hero:hover .btn-icon {
+    transform: translateX(4px);
+  }
+  
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 4px;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .hero-form-wrapper {
+    position: relative;
+    z-index: 2;
+    animation: slideInRight 1s ease 0.6s both;
+  }
+  
+  .hero-form-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-form-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .form-title {
+    color: #2d3748;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-subtitle {
+    color: #718096;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .form-label {
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background: white;
+  }
+  
+  .form-textarea {
+    resize: none;
+    min-height: 120px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-form-submit {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 16px 24px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  }
+  
+  .btn-form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+    color: white;
+  }
+  
+  .btn-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  .btn-form-submit:hover .btn-shine {
+    left: 100%;
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .security-badge {
+    display: inline-flex;
+    align-items: center;
+    color: #718096;
+    font-size: 0.9rem;
+  }
+  
+  .security-badge i {
+    margin-right: 6px;
+    color: #48bb78;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-form-card {
+      margin-top: 2rem;
+      padding: 2rem;
+    }
+    
+    .hero-stats {
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .hero-form-card {
+      padding: 1.5rem;
+    }
+    
+    .hero-stats {
+      gap: 1rem;
+    }
+    
+    .feature-item {
+      margin-bottom: 0.8rem;
+    }
+    
+    .floating-shape {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+function scrollToForm() {
+  document.getElementById('case-form').scrollIntoView({ 
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+// Handle hero form submission
+document.addEventListener('DOMContentLoaded', function() {
+  const heroForm = document.getElementById('heroForm');
+  
+  if (heroForm) {
+    heroForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const fullName = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const serviceType = document.getElementById('serviceType').value;
+      const oabNumber = document.getElementById('oabNumber').value.trim();
+      
+      if (!fullName || !email || !serviceType || !oabNumber) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+      
+      // Construct WhatsApp message
+      let message = `Interesse em Educação Empreendedora - Convexa\n\nOlá! Tenho interesse em transformar meu negócio com a Convexa.\n\n*Nome:* ${fullName}\n*Email:* ${email}\n*Interesse Principal:* ${serviceType}\n*OAB:* ${oabNumber}`;
+      
+      message += `\n\nGostaria de saber mais sobre como a Convexa pode me ajudar a escalar meu negócio. Obrigado!`;
+      
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(message);
+      
+      // Open WhatsApp with the message
+      const whatsappUrl = `https://wa.me/message/2WOWTII2LT3OK1?text=${encodedMessage}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  }
+});
+</script>

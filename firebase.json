@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "convexa-site",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "**/*.sh",
+      "**/temp/**",
+      "**/feed.xml",
+      "**/sitemap.xml"
+    ]
+  }
+}

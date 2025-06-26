@@ -1,0 +1,39 @@
+copyright: "© 2025 Convexa - Educação Empreendedora. Todos os direitos reservados."
+socials:
+  - name: LinkedIn
+    icon: fab fa-linkedin
+    link: https://linkedin.com/company/convexatech
+  - name: Instagram
+    icon: fab fa-instagram
+    link: https://instagram.com/convexatech
+  - name: YouTube
+    icon: fab fa-youtube
+    link: https://youtube.com/@convexatech
+
+links:
+  - title: Educação
+    items:
+      - name: Mentorias
+        link: /#mentoria
+      - name: Masterminds
+        link: /#masterminds
+      - name: Consultorias
+        link: /#consultorias
+  
+  - title: Para Advogados
+    items:
+      - name: Estruturação de Escritórios
+        link: /#estruturacao
+      - name: Marketing Jurídico
+        link: /#marketing
+      - name: Automação com IA
+        link: /#automacao
+  
+  - title: Informações
+    items:
+      - name: Blog
+        link: /blog/
+      - name: Termos de Uso
+        link: /termos-de-uso/
+      - name: Política de Privacidade
+        link: /politica-de-privacidade/

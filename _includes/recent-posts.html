@@ -1,0 +1,21 @@
+<section class="recent-posts-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge bg-primary bg-opacity-10 text-primary mb-3 py-2 px-3 rounded-pill mt-3">Blog</span>
+      <h2 class="section-title mt-2">Artigos <span class="text-gradient d-inline-block">Recentes</span></h2>
+      <p class="section-subtitle">Confira nosso conteúdo sobre otimização de processos judiciais</p>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for post in site.posts limit:3 %}
+        <div class="col">
+          {% include post-card.html post=post %}
+        </div>
+      {% endfor %}
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="{{ '/blog/' | relative_url }}" class="btn btn-outline-primary">Ver todos os artigos</a>
+    </div>
+  </div>
+</section>

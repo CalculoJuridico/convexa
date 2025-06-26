@@ -1,0 +1,540 @@
+// Variables
+$primary-color: #6366F1; // Indigo for a modern tech look
+$secondary-color: #64748B; // Slate gray
+$accent-color: #10B981; // Emerald green for a pop of color
+$info-color: #8B5CF6; // Purple
+$light-color: #F9FAFB; // White/gray
+$dark-color: #1E293B; // Dark slate blue
+$body-font: 'Inter', sans-serif;
+$heading-font: 'Plus Jakarta Sans', sans-serif;
+
+// Global Styles
+body {
+  font-family: $body-font;
+  color: $dark-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  font-weight: 600;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  
+  &:hover, &:focus {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.btn {
+  font-weight: 500;
+  
+  &.btn-lg {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  &.rounded-pill {
+    border-radius: 50rem;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: $secondary-color;
+  font-size: 1.1rem;
+}
+
+// Navigation
+.navbar {
+  padding: 1rem 0;
+  
+  .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
+}
+
+.navbar-spacer {
+  height: 5.5rem;
+}
+
+// Card Styles
+.card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  .card-body {
+    padding: 1.75rem;
+  }
+  
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background-color: rgba($primary-color, 0.1);
+    color: $primary-color;
+    margin-bottom: 1.25rem;
+  }
+}
+
+// Hero Section
+.hero-section {
+  padding: 4rem 0 4rem 0;
+  position: relative;
+  overflow: hidden;
+  
+  h1 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    font-size: 3.5rem;
+    background: linear-gradient(120deg, $primary-color, $info-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    max-width: 90%;
+  }
+  
+  .hero-image-container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 100%); // Indigo to purple gradient
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236366F1' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+  
+  // Add a modern mesh gradient overlay
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 35%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 60% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
+    z-index: 1;
+  }
+}
+
+// Text gradient styles
+.text-gradient {
+  background: linear-gradient(135deg, $primary-color, $info-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+// z-index utility
+.z-index-1 {
+  z-index: 1;
+}
+
+// Stats style
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+
+  i {
+    font-size: 1.2rem;
+  }
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+// Post Styles
+.post-container {
+  .post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    
+    h2, h3, h4 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1.5rem 0;
+      border-radius: 0.5rem;
+    }
+    
+    blockquote {
+      border-left: 5px solid $primary-color;
+      padding: 1rem 0 1rem 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      background-color: rgba($primary-color, 0.05);
+    }
+    
+    pre {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    
+    code {
+      background-color: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+// Author Styles
+.author-container {
+  .author-name {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+// Footer
+.footer {
+  .social-links {
+    a {
+      font-size: 1.25rem;
+      transition: opacity 0.3s ease;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 767.98px) {
+  .navbar-spacer {
+    height: 4.5rem;
+  }
+  
+  .hero-section {
+    padding: 4rem 0 4rem 0;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+  }
+  
+  .post-container .post-title {
+    font-size: 2rem;
+  }
+}
+
+// Team Section
+.testimonial-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.team-banner {
+  height: 80px;
+  background: linear-gradient(135deg, rgba($primary-color, 0.15) 0%, rgba($info-color, 0.15) 100%);
+  position: relative;
+}
+
+.team-avatar-container {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.team-avatar {
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.team-position {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+}
+
+.team-bio {
+  color: $secondary-color;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.team-social {
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: rgba($primary-color, 0.1);
+    color: $primary-color !important;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: white !important;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.advisor-avatar {
+  img {
+    border: 3px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.advisor-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.bg-gradient-subtle {
+  background: linear-gradient(135deg, rgba($primary-color, 0.15) 0%, rgba($info-color, 0.15) 100%);
+}
+
+// Portfolio Section
+.advantage-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+    
+    .advantage-icon {
+      transform: scale(1.1);
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
+
+.advantage-icon {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: rgba($primary-color, 0.1);
+  color: $primary-color;
+}
+
+.portfolio-icon-lg {
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Decorative dots pattern
+.decorative-dots {
+  width: 180px;
+  height: 80px;
+  background-image: radial-gradient($primary-color 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+// Utility class for rounded corners
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+// About Section
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  
+  .feature-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover .feature-icon {
+    transform: scale(1.2);
+  }
+}
+
+// Contact Section
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: rgba($primary-color, 0.1);
+  color: $primary-color;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.interest-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  
+  i {
+    font-size: 1rem;
+  }
+}
+
+.city-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: rgba($primary-color, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.form-floating {
+  .form-control, .form-select {
+    border-radius: 10px;
+    border-color: rgba($dark-color, 0.1);
+    
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.15);
+    }
+  }
+  
+  textarea.form-control {
+    height: 140px;
+  }
+}
+
+.form-check-input:checked {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.bg-gradient-soft {
+  background: linear-gradient(135deg, #F9FAFB 0%, #EEF2FF 100%);
+}
+
+// Utility Classes
+.object-cover {
+  object-fit: cover;
+}
+
+.bg-accent {
+  background-color: $accent-color;
+}
+
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+  .py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}

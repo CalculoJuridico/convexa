@@ -1,0 +1,42 @@
+<div class="card post-card-horizontal border-0 shadow-sm overflow-hidden">
+  <div class="row g-0">
+    {% if include.post.image %}
+      <div class="col-md-4">
+        <img src="{{ include.post.image | relative_url }}" class="img-fluid h-100 object-cover" alt="{{ include.post.title }}" style="object-fit: cover;">
+      </div>
+    {% endif %}
+    <div class="col-md-{% if include.post.image %}8{% else %}12{% endif %}">
+      <div class="card-body p-4">
+        <div class="post-meta d-flex align-items-center mb-2">
+          {% assign author = site.authors | where: "name", include.post.author | first %}
+          {% if author %}
+            <div class="author-image me-2">
+              {% if author.avatar %}
+                <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="rounded-circle" width="30" height="30">
+              {% else %}
+                <img src="{{ '/assets/images/avatar-default.jpg' | relative_url }}" alt="{{ author.name }}" class="rounded-circle" width="30" height="30">
+              {% endif %}
+            </div>
+            <div>
+              <a href="{{ author.url }}" class="text-decoration-none text-muted">{{ author.display_name }}</a>
+              <span class="mx-1">•</span>
+            </div>
+          {% endif %}
+          
+          <div>
+            <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+            {% if include.post.categories %}
+              <span class="mx-1">•</span>
+              <span>{{ include.post.categories | first }}</span>
+            {% endif %}
+          </div>
+        </div>
+        <h3 class="card-title h4 mb-3">
+          <a href="{{ include.post.url | relative_url }}" class="text-decoration-none text-dark">{{ include.post.title }}</a>
+        </h3>
+        <p class="card-text">{{ include.post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ include.post.url | relative_url }}" class="btn btn-outline-primary btn-sm">Continuar lendo</a>
+      </div>
+    </div>
+  </div>
+</div>

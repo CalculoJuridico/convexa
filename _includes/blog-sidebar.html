@@ -1,0 +1,97 @@
+<div class="blog-sidebar">
+  <div class="sidebar-widget mb-4 p-4 bg-white rounded shadow-sm">
+    <h4 class="widget-title mb-3">Buscar</h4>
+    <form class="search-form">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Buscar artigos..." aria-label="Buscar artigos">
+        <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="sidebar-widget mb-4 p-4 bg-white rounded shadow-sm">
+    <h4 class="widget-title mb-3">Categorias</h4>
+    <ul class="categories-list list-unstyled">
+      {% assign categories_list = site.categories | sort %}
+      {% for category in categories_list %}
+        <li class="mb-2">
+          <a href="/categorias/{{ category[0] | slugify }}/" class="text-decoration-none d-flex justify-content-between align-items-center">
+            <span>{{ category[0] }}</span>
+            <span class="badge bg-primary rounded-pill">{{ category[1].size }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+  <div class="sidebar-widget mb-4 p-4 bg-white rounded shadow-sm">
+    <h4 class="widget-title mb-3">Posts Populares</h4>
+    <div class="popular-posts">
+      {% for post in site.posts limit:3 %}
+        <div class="popular-post mb-3">
+          <div class="row g-0">
+            {% if post.image %}
+              <div class="col-3">
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="img-fluid rounded">
+              </div>
+            {% endif %}
+            <div class="col-{% if post.image %}9{% else %}12{% endif %}">
+              <div class="ps-{% if post.image %}3{% else %}0{% endif %}">
+                <h5 class="popular-post-title fs-6 mb-1">
+                  <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">{{ post.title | truncate: 40 }}</a>
+                </h5>
+                <div class="popular-post-date small text-muted">
+                  {{ post.date | date: "%d/%m/%Y" }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="sidebar-widget mb-4 p-4 bg-white rounded shadow-sm">
+    <h4 class="widget-title mb-3">Tags</h4>
+    <div class="tags-cloud">
+      {% assign tags_list = site.tags | sort %}
+      {% for tag in tags_list %}
+        <a href="/tags/{{ tag[0] | slugify }}/" class="badge bg-light text-dark text-decoration-none mb-2 me-1">{{ tag[0] }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="sidebar-widget mb-4 p-4 bg-white rounded shadow-sm">
+    <h4 class="widget-title mb-3">Nossos Especialistas</h4>
+    <div class="authors-list">
+      {% for author in site.authors limit:3 %}
+        <div class="author-item d-flex align-items-center mb-3">
+          <div class="author-image me-3">
+            {% if author.avatar %}
+              <img src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}" class="rounded-circle" width="50" height="50">
+            {% else %}
+              <img src="{{ '/assets/images/avatar-default.jpg' | relative_url }}" alt="{{ author.display_name }}" class="rounded-circle" width="50" height="50">
+            {% endif %}
+          </div>
+          <div>
+            <h5 class="author-name mb-0 fs-6">
+              <a href="{{ author.url }}" class="text-decoration-none text-dark">{{ author.display_name }}</a>
+            </h5>
+            <small class="text-muted">{{ author.position }}</small>
+          </div>
+        </div>
+      {% endfor %}
+      <div class="d-grid mt-2">
+        <a href="/autores/" class="btn btn-outline-primary btn-sm">Ver todos os autores</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-widget mb-4 p-4 bg-white rounded shadow-sm">
+    <h4 class="widget-title mb-3">Entre em Contato</h4>
+    <p class="mb-3">Tem dúvidas ou sugestões? Entre em contato conosco.</p>
+    <div class="d-grid">
+      <a href="/#contato" class="btn btn-primary">Fale Conosco</a>
+    </div>
+  </div>
+</div>

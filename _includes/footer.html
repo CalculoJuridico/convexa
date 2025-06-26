@@ -1,0 +1,72 @@
+<footer class="footer bg-dark text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="convexa-logo mb-3 d-flex align-items-center">
+          <img src="{{ '/assets/images/logos/icon_light.png' | relative_url }}" alt="Convexa - Educação Empreendedora" height="40">
+          <span class="ms-2 fw-bold text-white" style="font-family: Inter, sans-serif; font-size: 1.2rem;">Convexa</span>
+        </div>
+        <p class="mb-3">{{ site.description }}</p>
+        <div class="social-links">
+          {% for social in site.data.footer.socials %}
+            <a href="{{ social.link }}" class="me-2 text-white" target="_blank" rel="noopener">
+              <i class="{{ social.icon }}"></i>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      {% for column in site.data.footer.links %}
+        <div class="col-6 col-lg-2">
+          <h5 class="text-white mb-3">{{ column.title }}</h5>
+          <ul class="list-unstyled">
+            {% for item in column.items %}
+              <li class="mb-2">
+                <a href="{{ item.link | relative_url }}" class="text-white-50 text-decoration-none">{{ item.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+      
+      <div class="col-lg-4">
+        <h5 class="text-white mb-3">Contato</h5>
+        <p class="text-white-50 mb-3">Entre em contato para descobrir como nossa educação empreendedora pode transformar seu negócio.</p>
+        <p class="text-white-50 mb-2">
+          <i class="fas fa-envelope me-2"></i> {{ site.email }}
+        </p>
+        <p class="text-white-50 mb-2">
+          <i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP - Brasil
+        </p>
+        
+        <h6 class="text-primary mt-4 mb-3">O Que Oferecemos</h6>
+        <ul class="list-unstyled">
+          <li class="text-white-50 mb-2 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Mentorias estratégicas personalizadas
+          </li>
+          <li class="text-white-50 mb-2 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Masterminds de alta performance
+          </li>
+          <li class="text-white-50 mb-2 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Consultorias sob medida
+          </li>
+          <li class="text-white-50 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Educação em IA para advogados
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <hr class="my-4 bg-secondary">
+    
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb-md-0">{{ site.data.footer.copyright }}</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="{{ '/termos-de-uso/' | relative_url }}" class="text-white-50 me-3">Termos de Uso</a>
+        <a href="{{ '/politica-de-privacidade/' | relative_url }}" class="text-white-50">Política de Privacidade</a>
+      </div>
+    </div>
+  </div>
+</footer>

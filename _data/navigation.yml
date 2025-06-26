@@ -1,0 +1,21 @@
+- name: Início
+  link: /
+  icon: fas fa-home
+- name: Sobre
+  link: /#about-section
+  icon: fas fa-users
+- name: Serviços
+  link: /#services-section
+  icon: fas fa-graduation-cap
+- name: Mentoria
+  link: /#mentoria-section
+  icon: fas fa-handshake
+- name: Masterminds
+  link: /#masterminds-section
+  icon: fas fa-brain
+- name: Blog
+  link: /blog/
+  icon: fas fa-newspaper
+- name: Contato
+  link: /#contact
+  icon: fas fa-envelope

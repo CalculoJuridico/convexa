@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "cj-marketing-228913": {
+      "hosting": {
+        "convexa": [
+          "convexa-site"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

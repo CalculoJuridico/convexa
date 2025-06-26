@@ -1,0 +1,24 @@
+<div class="share-buttons">
+  <div class="share-text mb-2">Compartilhe este conteúdo:</div>
+  <div class="d-flex gap-2">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary" aria-label="Compartilhar no Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info" aria-label="Compartilhar no Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary" aria-label="Compartilhar no LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    
+    <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ page.url | absolute_url }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-success" aria-label="Compartilhar no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url }}" class="btn btn-sm btn-outline-dark" aria-label="Compartilhar por e-mail">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</div>

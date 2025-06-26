@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(firebase:*)",
+      "Bash(docker-compose build:*)",
+      "Bash(docker-compose run:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(mv:*)",
+      "Bash(docker compose:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
