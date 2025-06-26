@@ -1,176 +1,176 @@
 ---
 layout: page
-title: Termos de Uso
+title: Terms of Use
 permalink: /termos-de-uso/
-description: Termos e condições de uso dos serviços da Convexa - Educação Empreendedora.
+description: Terms and conditions for using Convexa services - Entrepreneurial Education.
 ---
 
-## Termos de Uso - Convexa
+## Terms of Use - Convexa
 
-*Última atualização: 26 de junho de 2025*
+*Last updated: June 26, 2025*
 
-## 1. Aceitação dos Termos
+## 1. Acceptance of Terms
 
-Ao contratar ou utilizar nossos serviços de educação empreendedora, você concorda com os presentes Termos de Uso e todas as diretrizes e políticas relacionadas.
+By contracting or using our entrepreneurial education services, you agree to these Terms of Use and all related guidelines and policies.
 
-## 2. Descrição dos Serviços
+## 2. Service Description
 
-A Convexa oferece:
+Convexa offers:
 
-- **Mentorias Estratégicas**: Acompanhamento personalizado para empreendedores
-- **Masterminds**: Grupos de alto nível para troca de experiências e estratégias
-- **Consultorias Especializadas**: Assessoria sob medida para advogados e empreendedores
-- **Educação com IA**: Treinamentos práticos sobre uso de inteligência artificial nos negócios
+- **Strategic Mentoring**: Personalized guidance for entrepreneurs
+- **Masterminds**: High-level groups for sharing experiences and strategies
+- **Specialized Consulting**: Custom advisory for lawyers and entrepreneurs
+- **AI Education**: Practical training on using artificial intelligence in business
 
-## 3. Elegibilidade e Requisitos
+## 3. Eligibility and Requirements
 
-Para solicitar um certificado digital, você deve:
+To use our services, you must:
 
-- Ser advogado(a) regularmente inscrito(a) na OAB
-- Fornecer documentação válida e atualizada
-- Cumprir os requisitos de validação do ICP-Brasil
-- Estar em conformidade com as normas da OAB
+- Be a legal professional or entrepreneur seeking business growth
+- Provide valid and updated documentation
+- Meet our program participation requirements
+- Comply with professional ethical standards
 
-## 4. Processo de Emissão
+## 4. Service Process
 
-### 4.1 Solicitação
-- Preenchimento completo do formulário de solicitação
-- Envio de documentação exigida pelo ICP-Brasil
-- Agendamento de validação presencial (quando aplicável)
+### 4.1 Registration
+- Complete application form submission
+- Required documentation submission
+- Initial consultation scheduling (when applicable)
 
-### 4.2 Validação
-- Verificação de identidade e documentação
-- Confirmação da inscrição na OAB
-- Validação biométrica (para certificados A3)
+### 4.2 Onboarding
+- Identity and documentation verification
+- Professional background confirmation
+- Program orientation and goal setting
 
-### 4.3 Emissão
-- Geração do certificado digital após aprovação
-- Entrega conforme modalidade escolhida (A1 ou A3)
+### 4.3 Service Delivery
+- Program participation according to chosen modality
+- Access to educational materials and resources
 
-## 5. Obrigações do Usuário
+## 5. User Obligations
 
-Você se compromete a:
+You commit to:
 
-- Fornecer informações verdadeiras e atualizadas
-- Manter a segurança e confidencialidade do certificado
-- Utilizar o certificado apenas para fins legais e profissionais
-- Notificar imediatamente sobre comprometimento ou perda
-- Revogar o certificado quando necessário
-- Cumprir as normas do ICP-Brasil e da OAB
+- Provide truthful and updated information
+- Maintain confidentiality of program materials
+- Use services only for legal and professional purposes
+- Notify immediately about any issues or concerns
+- Respect intellectual property rights
+- Comply with professional standards and ethics
 
-## 6. Uso Adequado do Certificado
+## 6. Appropriate Use of Services
 
-### 6.1 Usos Permitidos
-- Assinatura digital de petições e documentos jurídicos
-- Autenticação em sistemas governamentais
-- Comunicação segura com tribunais e órgãos públicos
-- Assinatura de contratos com validade jurídica
+### 6.1 Permitted Uses
+- Participation in educational programs and mentoring
+- Access to business development resources
+- Networking with other professionals
+- Application of learned methodologies in your business
 
-### 6.2 Usos Proibidos
-- Transferência ou empréstimo a terceiros
-- Uso para atividades ilegais ou fraudulentas
-- Assinatura de documentos sem autorização
-- Violação de normas profissionais da OAB
+### 6.2 Prohibited Uses
+- Sharing or transferring access to third parties
+- Use for illegal or fraudulent activities
+- Reproduction of proprietary content without authorization
+- Violation of professional ethical standards
 
-## 7. Validade e Renovação
+## 7. Program Duration and Completion
 
-- **Certificado A1**: Válido por 1 ano
-- **Certificado A3**: Válido por 3 anos
-- Renovação deve ser solicitada antes do vencimento
-- Certificados vencidos perdem validade jurídica
+- **Mentoring Programs**: Duration varies by program type
+- **Masterminds**: Ongoing participation with periodic renewals
+- Completion certificates issued upon program fulfillment
+- Continuing education opportunities available
 
-## 8. Revogação de Certificados
+## 8. Program Termination
 
-O certificado pode ser revogado em caso de:
+Programs may be terminated in case of:
 
-- Comprometimento da chave privada
-- Mudança de dados do titular
-- Violação dos termos de uso
-- Suspensão ou cancelamento da inscrição na OAB
-- Solicitação do próprio titular
+- Violation of terms of use
+- Inappropriate behavior during sessions
+- Non-payment of agreed fees
+- Request by the participant
+- Suspension of professional license
 
-## 9. Responsabilidades e Limitações
+## 9. Responsibilities and Limitations
 
-### 9.1 Nossas Responsabilidades
-- Emitir certificados em conformidade com ICP-Brasil
-- Manter infraestrutura segura
-- Fornecer suporte técnico adequado
-- Notificar sobre questões de segurança
+### 9.1 Our Responsibilities
+- Deliver quality educational services
+- Maintain secure infrastructure
+- Provide adequate technical support
+- Notify about important program updates
 
-### 9.2 Limitações de Responsabilidade
-- Não nos responsabilizamos por uso inadequado do certificado
-- Perdas decorrentes de comprometimento por negligência do usuário
-- Problemas causados por software de terceiros
-- Indisponibilidade de sistemas externos
+### 9.2 Liability Limitations
+- We are not responsible for inappropriate use of learned methodologies
+- Losses due to participant negligence
+- Issues caused by third-party software
+- Unavailability of external systems
 
-## 10. Preços e Pagamento
+## 10. Pricing and Payment
 
-- Preços são definidos conforme tabela vigente
-- Pagamento deve ser efetuado conforme condições acordadas
-- Taxas de renovação aplicam-se conforme período
-- Não há reembolso após emissão do certificado
+- Prices are defined according to current pricing table
+- Payment must be made according to agreed conditions
+- Renewal fees apply according to program terms
+- Refund policy applies as per contract terms
 
-## 11. Suporte e Atendimento
+## 11. Support and Service
 
-Oferecemos suporte para:
+We offer support for:
 
-- Instalação e configuração de certificados
-- Resolução de problemas técnicos
-- Orientações sobre uso adequado
-- Processo de renovação
+- Program navigation and participation
+- Technical issue resolution
+- Guidance on methodology application
+- Process clarification
 
-**Canais de atendimento:**
-- E-mail: suporte@certificado.adv.br
-- Telefone: (11) 3456-7890
-- Horário: Segunda a sexta, 8h às 18h
+**Support channels:**
+- Email: suporte@convexatech.com.br
+- Phone: (11) 3456-7890
+- Hours: Monday to Friday, 8am to 6pm
 
-## 12. Conformidade Legal
+## 12. Legal Compliance
 
-Nossos serviços seguem:
+Our services follow:
 
-- Regulamentação ICP-Brasil
-- Normas da OAB
-- Lei Geral de Proteção de Dados (LGPD)
-- Código Civil e legislação aplicável
+- Brazilian educational regulations
+- Professional association standards
+- General Data Protection Law (LGPD)
+- Civil Code and applicable legislation
 
-## 13. Alterações nos Termos
+## 13. Changes to Terms
 
-Podemos modificar estes termos periodicamente. Alterações significativas serão comunicadas com antecedência. O uso continuado dos serviços implica aceitação dos novos termos.
+We may modify these terms periodically. Significant changes will be communicated in advance. Continued use of services implies acceptance of new terms.
 
-## 14. Rescisão
+## 14. Termination
 
-### 14.1 Pelo Usuário
-- Pode solicitar revogação do certificado a qualquer momento
-- Deve cumprir procedimentos de revogação
+### 14.1 By User
+- May request program termination at any time
+- Must follow termination procedures
 
-### 14.2 Por Nossa Parte
-- Podemos revogar certificados por violação dos termos
-- Em casos de comprometimento de segurança
-- Por determinação de autoridades competentes
+### 14.2 By Us
+- We may terminate participation for terms violation
+- In cases of security compromise
+- By determination of competent authorities
 
-## 15. Resolução de Conflitos
+## 15. Conflict Resolution
 
-Em caso de disputas:
+In case of disputes:
 
-1. Tentativa de resolução amigável
-2. Mediação ou arbitragem
-3. Foro da comarca de São Paulo, SP
+1. Attempt at amicable resolution
+2. Mediation or arbitration
+3. Jurisdiction of São Paulo, SP courts
 
-## 16. Disposições Gerais
+## 16. General Provisions
 
-- Estes termos constituem acordo completo
-- Invalidade de cláusula não afeta o restante
-- Lei brasileira aplicável
-- Idioma português prevalece
+- These terms constitute complete agreement
+- Invalidity of clause does not affect the rest
+- Brazilian law applicable
+- Portuguese language prevails
 
-## 17. Contato
+## 17. Contact
 
-Para questões sobre estes Termos:
+For questions about these Terms:
 
-**E-mail**: contato@convexatech.com.br  
-**Telefone**: (11) 3456-7890  
-**Endereço**: São Paulo, SP  
+**Email**: contato@convexatech.com.br  
+**Phone**: (11) 3456-7890  
+**Address**: São Paulo, SP  
 
 ---
 
-*Ao utilizar nossos serviços, você confirma ter lido, compreendido e concordado com estes Termos de Uso.*
+*By using our services, you confirm having read, understood, and agreed to these Terms of Use.*

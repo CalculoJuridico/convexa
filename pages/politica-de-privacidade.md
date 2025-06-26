@@ -41,8 +41,8 @@ Utilizamos suas informações para:
 
 O tratamento de seus dados pessoais é baseado em:
 
-- **Execução de contrato**: para emissão e gestão de certificados digitais
-- **Cumprimento de obrigação legal**: conforme regulamentação ICP-Brasil
+- **Execução de contrato**: para prestação de serviços educacionais
+- **Cumprimento de obrigação legal**: conforme legislação aplicável
 - **Legítimo interesse**: para segurança e prevenção de fraudes
 - **Consentimento**: para comunicações promocionais (quando aplicável)
 
@@ -50,8 +50,8 @@ O tratamento de seus dados pessoais é baseado em:
 
 Seus dados podem ser compartilhados com:
 
-- **Autoridade Certificadora Raiz (AC-Raiz)**: conforme regulamentação ICP-Brasil
-- **Prestadores de serviços**: empresas que auxiliam na validação e emissão
+- **Prestadores de serviços**: empresas que auxiliam na prestação de serviços educacionais
+- **Parceiros educacionais**: instituições que colaboram em nossos programas
 - **Órgãos reguladores**: OAB e outros órgãos quando necessário
 - **Autoridades competentes**: quando exigido por lei ou ordem judicial
 
@@ -61,7 +61,7 @@ Implementamos rigorosas medidas de segurança:
 
 - Criptografia avançada para proteção de dados
 - Controles de acesso restrito
-- Ambientes seguros homologados pelo ICP-Brasil
+- Ambientes seguros e protegidos
 - Backup seguro e recuperação de dados
 - Monitoramento contínuo de segurança
 
@@ -69,8 +69,8 @@ Implementamos rigorosas medidas de segurança:
 
 Mantemos seus dados conforme exigido pela regulamentação:
 
-- **Durante a validade do certificado**: para suporte e gestão
-- **Após o vencimento**: por período determinado pela AC-Raiz
+- **Durante a prestação do serviço**: para suporte e gestão
+- **Após o encerramento**: por período determinado pela legislação
 - **Logs de segurança**: conforme políticas de auditoria
 - **Dados de validação**: pelo prazo legal exigido
 
@@ -86,7 +86,7 @@ Você tem o direito de:
 - Obter informações sobre compartilhamento
 - Revogar consentimento (quando aplicável)
 
-**Limitações**: Alguns direitos podem ser limitados devido às obrigações legais do ICP-Brasil.
+**Limitações**: Alguns direitos podem ser limitados devido às obrigações legais aplicáveis.
 
 ## 8. Cookies e Tecnologias
 
@@ -95,7 +95,7 @@ Utilizamos cookies para:
 - Manter sua sessão ativa na plataforma
 - Melhorar a experiência do usuário
 - Analisar o uso dos serviços
-- Garantir a segurança das transações
+- Garantir a segurança dos dados
 
 ## 9. Transferência Internacional
 
