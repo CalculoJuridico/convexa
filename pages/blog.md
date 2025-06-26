@@ -1,6 +1,6 @@
 ---
 layout: blog
 title: Blog
-permalink: /blog-old/
-description: Fique por dentro das últimas novidades e tendências sobre gestão de documentos judiciais e otimização de processos.
+permalink: /blog/
+description: Insights e estratégias sobre educação empreendedora, convexidade em negócios e transformação digital para empreendedores.
 ---
