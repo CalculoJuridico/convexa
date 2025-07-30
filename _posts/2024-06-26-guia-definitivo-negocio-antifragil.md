@@ -3,10 +3,10 @@ layout: post
 title: "O Guia Definitivo para um Negócio Antifrágil: Fuja da Armadilha Côncava e Abrace a Convexidade"
 description: "Descubra como transformar seu negócio de frágil para antifrágil usando os conceitos de convexidade de Nassim Taleb. Aprenda estratégias práticas para prosperar no caos."
 date: 2024-06-26
-image: /assets/images/posts/gestao-escritorio-advocacia.jpg
-author: Maria Oliveira
-author_image: /assets/images/authors/maria-oliveira.jpg
+image: /assets/images/posts/antifragil.jpg
+author: Pedro Santos
 tags: [convexidade, antifragil, nassim-taleb, empreendedorismo, estratégia, negócios]
+permalink: "/negocio-antifragil/"
 ---
 
 No universo do empreendedorismo, uma das maiores fontes de ansiedade é a incerteza. Crises econômicas, pandemias, novas tecnologias disruptivas, mudanças abruptas na legislação... Eventos imprevisíveis, que o autor e filósofo **Nassim Nicholas Taleb** batizou de **"Cisnes Negros"**, podem varrer do mapa negócios que pareciam sólidos.
