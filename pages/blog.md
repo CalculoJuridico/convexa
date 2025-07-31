@@ -2,5 +2,5 @@
 layout: blog
 title: Blog
 permalink: /blog/
-description: Insights e estratégias sobre educação empreendedora, convexidade em negócios e transformação digital para empreendedores.
+description: Insights sobre desenvolvimento de SaaS, WhatsApp + IA, recorrência e transformação digital para influenciadores e experts.
 ---

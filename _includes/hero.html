@@ -19,18 +19,18 @@
             <span class="badge-icon">
               <i class="fas fa-sparkles"></i>
             </span>
-            <span class="badge-text">Educação Empreendedora com Impacto Real</span>
+            <span class="badge-text">SaaS + WhatsApp + IA para Recorrência</span>
           </div>
           
           <h1 class="hero-title mb-4">
-            Transforme Seu
-            <span class="text-gradient">Negócio</span>
+            Seu Próprio
+            <span class="text-gradient">App SaaS</span>
             com Convexa
           </h1>
           
           <p class="hero-subtitle mb-5">
-            Educação empreendedora especializada para advogados e profissionais do direito. 
-            Mentorias, masterminds, consultorias e soluções tecnológicas com IA para escalar seu negócio.
+            Transformamos influenciadores em proprietários de SaaS. Desenvolvemos apps modernos com WhatsApp + IA 
+            para você ter recorrência real e se libertar dos lançamentos constantes.
           </p>
           
           <div class="hero-features mb-5">
@@ -39,8 +39,8 @@
                 <i class="fas fa-graduation-cap"></i>
               </div>
               <div class="feature-text">
-                <strong>Mentorias Estratégicas</strong>
-                <span>Acompanhamento personalizado com resultados reais</span>
+                <strong>Desenvolvimento Completo</strong>
+                <span>App SaaS personalizado para seu método e audiência</span>
               </div>
             </div>
             
@@ -49,8 +49,8 @@
                 <i class="fas fa-users"></i>
               </div>
               <div class="feature-text">
-                <strong>Masterminds Exclusivos</strong>
-                <span>Conecte-se com empreendedores de alta performance</span>
+                <strong>Equipe Dedicada</strong>
+                <span>Time completo de desenvolvimento e atendimento</span>
               </div>
             </div>
             
@@ -59,8 +59,8 @@
                 <i class="fas fa-robot"></i>
               </div>
               <div class="feature-text">
-                <strong>Inteligência Artificial</strong>
-                <span>Use IA para automatizar e escalar seu escritório</span>
+                <strong>WhatsApp + IA</strong>
+                <span>Interface amigável que seus clientes já conhecem</span>
               </div>
             </div>
           </div>
@@ -99,9 +99,9 @@
               <div class="form-icon">
                 <img src="/assets/images/logos/icon_light.png" alt="Icon Light" class="img-fluid" width="33px">
               </div>
-              <h3 class="form-title">Transforme Seu Negócio</h3>
+              <h3 class="form-title">Tenha Seu Próprio SaaS</h3>
               <p class="form-subtitle">
-                Preencha os dados e descubra como nossa educação empreendedora pode escalar seu escritório.
+                Preencha os dados e descubra como podemos criar um app para gerar recorrência no seu negócio.
               </p>
             </div>
             
@@ -117,24 +117,30 @@
               </div>
               
               <div class="form-group">
-                <label class="form-label">Interesse Principal</label>
+                <label class="form-label">Tipo de Produto</label>
                 <select id="serviceType" class="form-control" required>
-                  <option value="">Selecione seu foco</option>
-                  <option value="Mentoria">Mentoria Estratégica</option>
-                  <option value="Mastermind">Mastermind de Alta Performance</option>
-                  <option value="Consultoria">Consultoria Personalizada</option>
-                  <option value="IA">Educação em IA para Advogados</option>
+                  <option value="">Selecione seu produto principal</option>
+                  <option value="Infoproduto">Cursos/Infoprodutos</option>
+                  <option value="Mentoria">Mentorias/Consultorias</option>
+                  <option value="Comunidade">Comunidades/Assinaturas</option>
+                  <option value="Software">Já divulgo softwares de terceiros</option>
                 </select>
               </div>
               
               <div class="form-group">
-                <label class="form-label">OAB</label>
-                <input type="text" id="oabNumber" class="form-control" placeholder="Número da OAB" required>
+                <label class="form-label">Tamanho da Audiência</label>
+                <select id="audienceSize" class="form-control" required>
+                  <option value="">Selecione o tamanho</option>
+                  <option value="5k-25k">5K - 25K seguidores</option>
+                  <option value="25k-100k">25K - 100K seguidores</option>
+                  <option value="100k-500k">100K - 500K seguidores</option>
+                  <option value="500k+">Mais de 500K seguidores</option>
+                </select>
               </div>
               
               <button type="submit" class="btn btn-form-submit w-100">
                 <i class="fas fa-rocket me-2"></i>
-                Quero Transformar Meu Negócio
+                Quero Meu Próprio SaaS
                 <div class="btn-shine"></div>
               </button>
             </form>
@@ -610,17 +616,17 @@ document.addEventListener('DOMContentLoaded', function() {
       const fullName = document.getElementById('fullName').value.trim();
       const email = document.getElementById('email').value.trim();
       const serviceType = document.getElementById('serviceType').value;
-      const oabNumber = document.getElementById('oabNumber').value.trim();
+      const audienceSize = document.getElementById('audienceSize').value;
       
-      if (!fullName || !email || !serviceType || !oabNumber) {
+      if (!fullName || !email || !serviceType || !audienceSize) {
         alert('Por favor, preencha todos os campos obrigatórios.');
         return;
       }
       
       // Construct WhatsApp message
-      let message = `Interesse em Educação Empreendedora - Convexa\n\nOlá! Tenho interesse em transformar meu negócio com a Convexa.\n\n*Nome:* ${fullName}\n*Email:* ${email}\n*Interesse Principal:* ${serviceType}\n*OAB:* ${oabNumber}`;
+      let message = `Interesse em SaaS + WhatsApp + IA - Convexa\n\nOlá! Tenho interesse em ter meu próprio app SaaS com a Convexa.\n\n*Nome:* ${fullName}\n*Email:* ${email}\n*Tipo de Produto:* ${serviceType}\n*Audiência:* ${audienceSize}`;
       
-      message += `\n\nGostaria de saber mais sobre como a Convexa pode me ajudar a escalar meu negócio. Obrigado!`;
+      message += `\n\nGostaria de saber mais sobre como a Convexa pode criar um app para gerar recorrência no meu negócio. Obrigado!`;
       
       // Encode message for URL
       const encodedMessage = encodeURIComponent(message);

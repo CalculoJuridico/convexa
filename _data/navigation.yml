@@ -1,18 +1,12 @@
 - name: Início
   link: /
   icon: fas fa-home
-- name: Sobre
-  link: /#about-section
-  icon: fas fa-users
-- name: Serviços
+- name: Como Funciona
   link: /#services-section
-  icon: fas fa-graduation-cap
-- name: Mentoria
-  link: /#mentoria-section
-  icon: fas fa-handshake
-- name: Masterminds
-  link: /#masterminds-section
-  icon: fas fa-brain
+  icon: fas fa-mobile-alt
+- name: Vantagens
+  link: /#advantages
+  icon: fas fa-chart-line
 - name: Blog
   link: /blog/
   icon: fas fa-newspaper

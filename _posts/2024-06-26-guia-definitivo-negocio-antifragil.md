@@ -137,20 +137,18 @@ Taleb propõe a "Estratégia Barbell" (barra de halteres) como um modelo mental 
 
 Se todas as apostas do extremo convexo falharem, a perda é de apenas 10% -- o negócio continua seguro. Mas se uma delas der certo, o ganho pode transformar completamente a empresa.
 
-### A Convexa: Sua Parceira na Jornada Antifrágil
+### A Convexa: Sua Parceira na Construção do seu Ativo Convexo
 
-Entender esses conceitos é transformador, mas a implementação pode ser complexa. É preciso método, acompanhamento e acesso às ferramentas certas.
+Entender esses conceitos é o primeiro passo. O segundo é ter um parceiro que já trilhou esse caminho e tem a expertise para transformar a teoria em um negócio de verdade.
 
-A **Convexa** nasceu exatamente com este propósito: ser a ponte entre a teoria da antifragilidade e o resultado prático no seu negócio. Nós não apenas ensinamos esses conceitos; nós os implementamos com você.
+A **Convexa** é especialista em criar negócios convexos para influenciadores e experts. Nós pegamos seu conhecimento, sua audiência e seu método, e o transformamos em um **ativo de software (SaaS) com receita recorrente**.
 
--   **Com nossas mentorias e consultorias,** ajudamos a diagnosticar a "concavidade" do seu negócio, a identificar fragilidades ocultas e a desenhar um plano de ação "Barbell" sob medida.
+-   **Nós construímos seu app,** com interface web, WhatsApp e uma IA treinada no seu conteúdo, criando a "aposta" de alta convexidade que você precisa.
+-   **Nós montamos o time,** cuidamos da tecnologia e da operação, permitindo que você siga focado nos seus 90% seguros enquanto nós desenvolvemos seus 10% de crescimento exponencial.
+-   **Nós podemos investir no desenvolvimento,** criando um modelo de parceria onde o risco é nosso e o sucesso é compartilhado. Nós só ganhamos se você ganhar.
 
--   **Com nossa educação prática em IA e tecnologia,** entregamos as ferramentas que servem como alavanca para criar uma assimetria positiva real na sua operação, transformando custos em investimentos convexos.
+O futuro não será estável. Ele pertencerá aos que não apenas sobrevivem ao caos, mas são projetados para se alimentar dele. A pergunta final é simples:
 
--   **Em nossos masterminds,** você se conecta com empreendedores que estão na mesma jornada, transformando a solidão da liderança em uma força coletiva para a inovação e a experimentação.
-
-O futuro não será estável. Ele pertencerá aos negócios que não apenas sobrevivem ao caos, mas que são projetados para se alimentar dele. A pergunta final é simples:
-
-**Você quer continuar protegendo seu castelo de areia ou prefere aprender a surfar as ondas?**
+**Você quer continuar no ciclo de lançamentos ou quer construir um ativo que trabalha para você?**
 
 #Convexidade #Antifragil #NassimTaleb #EmpreendedorismoJuridico #Inovação #InteligenciaArtificial #NegociosEscalaveis #Estratégia #Convexa

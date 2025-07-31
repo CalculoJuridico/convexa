@@ -1,4 +1,4 @@
-copyright: "© 2025 Convexa - Educação Empreendedora. Todos os direitos reservados."
+copyright: "© 2025 Convexa - Desenvolvimento SaaS. Todos os direitos reservados."
 socials:
   - name: LinkedIn
     icon: fab fa-linkedin
@@ -11,23 +11,23 @@ socials:
     link: https://youtube.com/@convexatech
 
 links:
-  - title: Educação
+  - title: SaaS Development
     items:
-      - name: Mentorias
-        link: /#mentoria
-      - name: Masterminds
-        link: /#masterminds
-      - name: Consultorias
-        link: /#consultorias
+      - name: Como Funciona
+        link: /#services-section
+      - name: Vantagens
+        link: /#advantages
+      - name: Portfolio
+        link: /#portfolio
   
-  - title: Para Advogados
+  - title: Para Influenciadores
     items:
-      - name: Estruturação de Escritórios
-        link: /#estruturacao
-      - name: Marketing Jurídico
-        link: /#marketing
-      - name: Automação com IA
-        link: /#automacao
+      - name: WhatsApp + IA
+        link: /#whatsapp-ai
+      - name: Recorrência
+        link: /#recorrencia
+      - name: Partnership
+        link: /#partnership
   
   - title: Informações
     items:

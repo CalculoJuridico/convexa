@@ -2,37 +2,37 @@
 layout: page
 title: Política de Privacidade
 permalink: /politica-de-privacidade/
-description: Política de Privacidade da Convexa - Educação Empreendedora.
+description: Política de Privacidade da Convexa - Desenvolvimento de SaaS para Influenciadores.
 ---
 
 ## Política de Privacidade
 
 *Última atualização: 26 de junho de 2025*
 
-Esta Política de Privacidade descreve como a Convexa coleta, utiliza e protege suas informações pessoais quando você utiliza nossos serviços de educação empreendedora, mentorias e consultorias.
+Esta Política de Privacidade descreve como a Convexa coleta, utiliza e protege suas informações pessoais quando você utiliza nossos serviços de desenvolvimento de aplicativos SaaS para influenciadores e experts.
 
 ## 1. Informações que Coletamos
 
 ### 1.1 Informações Pessoais e Profissionais
 
 - **Dados pessoais**: nome completo, CPF, RG, data de nascimento
-- **Dados profissionais**: número da OAB (quando aplicável), área de atuação, experiência
+- **Dados profissionais**: área de atuação, tipo de produto, tamanho da audiência, plataforma principal
 - **Informações de contato**: e-mail, telefone, endereço para correspondência
-- **Informações comerciais**: dados da empresa, faturamento, objetivos de negócio
+- **Informações comerciais**: dados sobre negócio atual, audiência, objetivos de recorrência
 
 ### 1.2 Informações de Uso da Plataforma
 
 - **Dados de acesso**: logs de login, endereço IP, data e hora de acesso
-- **Participação em programas**: histórico de mentorias, masterminds e consultorias
+- **Desenvolvimento de apps**: histórico de projetos SaaS, métricas de uso, feedback
 - **Informações do dispositivo**: tipo de dispositivo, sistema operacional, navegador
 
 ## 2. Como Utilizamos Suas Informações
 
 Utilizamos suas informações para:
 
-- Fornecer serviços de educação empreendedora personalizada
-- Realizar mentorias, masterminds e consultorias
-- Criar conteúdo educacional relevante e personalizado
+- Desenvolver aplicativos SaaS personalizados com IA
+- Fornecer suporte técnico e manutenção de aplicativos
+- Criar soluções WhatsApp + IA customizadas
 - Fornecer suporte técnico e atendimento ao cliente
 - Manter a qualidade e eficácia dos nossos programas
 - Enviar comunicações sobre programas e conteúdos educacionais
@@ -41,7 +41,7 @@ Utilizamos suas informações para:
 
 O tratamento de seus dados pessoais é baseado em:
 
-- **Execução de contrato**: para prestação de serviços educacionais
+- **Execução de contrato**: para desenvolvimento e operação de aplicativos SaaS
 - **Cumprimento de obrigação legal**: conforme legislação aplicável
 - **Legítimo interesse**: para segurança e prevenção de fraudes
 - **Consentimento**: para comunicações promocionais (quando aplicável)
@@ -50,9 +50,9 @@ O tratamento de seus dados pessoais é baseado em:
 
 Seus dados podem ser compartilhados com:
 
-- **Prestadores de serviços**: empresas que auxiliam na prestação de serviços educacionais
-- **Parceiros educacionais**: instituições que colaboram em nossos programas
-- **Órgãos reguladores**: OAB e outros órgãos quando necessário
+- **Prestadores de serviços**: empresas que auxiliam no desenvolvimento e hospedagem de aplicativos
+- **Parceiros tecnológicos**: provedores de IA, WhatsApp Business e infraestrutura
+- **Órgãos reguladores**: autoridades competentes quando necessário
 - **Autoridades competentes**: quando exigido por lei ou ordem judicial
 
 ## 5. Segurança das Informações
