@@ -64,7 +64,7 @@ ${formData.businessDescription ? `📝 *Sobre o negócio:*\n${formData.businessD
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        message: message
+        mensagem: message
       }),
     });
 
