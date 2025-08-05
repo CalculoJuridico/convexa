@@ -1,4 +1,16 @@
 {
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules/**",
+        ".git/**",
+        ".gitignore",
+        "*.log"
+      ]
+    }
+  ],
   "hosting": {
     "site": "convexa-site",
     "public": "build",

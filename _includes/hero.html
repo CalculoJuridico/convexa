@@ -11,10 +11,10 @@
   </div>
   
   <div class="container">
-    <div class="row align-items-center" style="min-height: 85vh;">
-      <!-- Left side - Content -->
-      <div class="col-lg-6 order-2 order-lg-1">
-        <div class="hero-content">
+    <div class="row justify-content-center" style="min-height: 85vh;">
+      <!-- Hero Content - Full Width -->
+      <div class="col-lg-8">
+        <div class="hero-content text-center">
           <div class="hero-badge mb-4">
             <span class="badge-icon">
               <i class="fas fa-sparkles"></i>
@@ -23,55 +23,53 @@
           </div>
           
           <h1 class="hero-title mb-4">
-            Seu Próprio
-            <span class="text-gradient">App SaaS</span>
-            com Convexa
+            Tenha renda recorrente
+            <span class="text-gradient">escalável</span>
+            com um SaaS só seu
           </h1>
           
           <p class="hero-subtitle mb-5">
             Transformamos influenciadores em proprietários de SaaS. Desenvolvemos apps modernos com WhatsApp + IA 
-            para você ter recorrência real e se libertar dos lançamentos constantes.
+            para você ter recorrência real e se libertar dos lançamentos constantes. Criamos soluções personalizadas 
+            que se conectam diretamente com sua audiência, automatizando processos e gerando valor contínuo para seus clientes.
           </p>
           
-          <div class="hero-features mb-5">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <i class="fas fa-graduation-cap"></i>
+          <div class="hero-value-props mb-5">
+            <div class="value-prop-grid">
+              <div class="value-prop-item">
+                <div class="value-icon">
+                  <i class="fas fa-infinity"></i>
+                </div>
+                <h3>Recorrência Real</h3>
+                <p>Saia do ciclo de lançamentos e tenha receita previsível todo mês</p>
               </div>
-              <div class="feature-text">
-                <strong>Desenvolvimento Completo</strong>
-                <span>App SaaS personalizado para seu método e audiência</span>
+              
+              <div class="value-prop-item">
+                <div class="value-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Escala Automática</h3>
+                <p>IA e automações que crescem seu negócio sem aumentar sua equipe</p>
               </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="feature-icon">
-                <i class="fas fa-users"></i>
-              </div>
-              <div class="feature-text">
-                <strong>Equipe Dedicada</strong>
-                <span>Time completo de desenvolvimento e atendimento</span>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="feature-icon">
-                <i class="fas fa-robot"></i>
-              </div>
-              <div class="feature-text">
-                <strong>WhatsApp + IA</strong>
-                <span>Interface amigável que seus clientes já conhecem</span>
+              
+              <div class="value-prop-item">
+                <div class="value-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3>Conexão Genuína</h3>
+                <p>WhatsApp cria relacionamento próximo e aumenta retenção de clientes</p>
               </div>
             </div>
           </div>
           
           <div class="hero-cta">
-            <button class="btn btn-primary btn-hero" onclick="scrollToForm()">
-              <span class="btn-text">Começar Agora</span>
+            <a href="/saas-form" class="btn btn-primary btn-hero">
+              <img src="/assets/images/logos/icon_light.png" alt="Convexa" class="btn-logo">
+              <span class="btn-text">Tenha seu próprio SaaS</span>
               <span class="btn-icon">
                 <i class="fas fa-arrow-right"></i>
               </span>
-            </button>
+            </a>
             
             <div class="hero-stats">
               <div class="stat-item">
@@ -85,70 +83,6 @@
               <div class="stat-item">
                 <div class="stat-number">Resultado</div>
                 <div class="stat-label">Garantido</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Right side - Form Card -->
-      <div class="col-lg-6 order-1 order-lg-2">
-        <div class="hero-form-wrapper">
-          <div class="hero-form-card" id="case-form">
-            <div class="form-header">
-              <div class="form-icon">
-                <img src="/assets/images/logos/icon_light.png" alt="Icon Light" class="img-fluid" width="33px">
-              </div>
-              <h3 class="form-title">Tenha Seu Próprio SaaS</h3>
-              <p class="form-subtitle">
-                Preencha os dados e descubra como podemos criar um app para gerar recorrência no seu negócio.
-              </p>
-            </div>
-            
-            <form id="heroForm" class="form-body">
-              <div class="form-group">
-                <label class="form-label">Nome completo</label>
-                <input type="text" id="fullName" class="form-control" placeholder="Seu nome completo" required>
-              </div>
-              
-              <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="seu@email.com" required>
-              </div>
-              
-              <div class="form-group">
-                <label class="form-label">Tipo de Produto</label>
-                <select id="serviceType" class="form-control" required>
-                  <option value="">Selecione seu produto principal</option>
-                  <option value="Infoproduto">Cursos/Infoprodutos</option>
-                  <option value="Mentoria">Mentorias/Consultorias</option>
-                  <option value="Comunidade">Comunidades/Assinaturas</option>
-                  <option value="Software">Já divulgo softwares de terceiros</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label class="form-label">Tamanho da Audiência</label>
-                <select id="audienceSize" class="form-control" required>
-                  <option value="">Selecione o tamanho</option>
-                  <option value="5k-25k">5K - 25K seguidores</option>
-                  <option value="25k-100k">25K - 100K seguidores</option>
-                  <option value="100k-500k">100K - 500K seguidores</option>
-                  <option value="500k+">Mais de 500K seguidores</option>
-                </select>
-              </div>
-              
-              <button type="submit" class="btn btn-form-submit w-100">
-                <i class="fas fa-rocket me-2"></i>
-                Quero Meu Próprio SaaS
-                <div class="btn-shine"></div>
-              </button>
-            </form>
-            
-            <div class="form-footer">
-              <div class="security-badge">
-                <i class="fas fa-lock"></i>
-                <span>Seus dados estão protegidos</span>
               </div>
             </div>
           </div>
@@ -300,42 +234,57 @@
     animation: slideInLeft 1s ease 0.6s both;
   }
   
-  .hero-features {
-    animation: slideInLeft 1s ease 0.8s both;
+  .hero-value-props {
+    animation: slideInUp 1s ease 0.8s both;
   }
   
-  .feature-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+  .value-prop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
   }
   
-  .feature-icon {
-    width: 48px;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
+  .value-prop-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value-prop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .value-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1rem;
-    color: #FFD700;
-    font-size: 1.2rem;
+    margin: 0 auto 1rem;
+    color: #1a1a1a;
+    font-size: 1.5rem;
   }
   
-  .feature-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .feature-text strong {
+  .value-prop-item h3 {
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 2px;
+    color: white;
+    margin-bottom: 0.5rem;
   }
   
-  .feature-text span {
-    font-size: 0.9rem;
-    opacity: 0.8;
+  .value-prop-item p {
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-bottom: 0;
   }
   
   .hero-cta {
@@ -355,6 +304,10 @@
     transition: all 0.3s ease;
     box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
     margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
   }
   
   .btn-hero:hover {
@@ -375,6 +328,12 @@
   
   .btn-hero:hover .btn-icon {
     transform: translateX(4px);
+  }
+  
+  .btn-logo {
+    height: 24px;
+    width: auto;
+    filter: brightness(0) invert(1);
   }
   
   .hero-stats {
@@ -553,15 +512,26 @@
     }
   }
   
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   /* Responsive Design */
   @media (max-width: 991px) {
     .hero-title {
       font-size: 2.5rem;
     }
     
-    .hero-form-card {
-      margin-top: 2rem;
-      padding: 2rem;
+    .value-prop-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
     
     .hero-stats {
@@ -579,16 +549,12 @@
       font-size: 1.1rem;
     }
     
-    .hero-form-card {
+    .value-prop-item {
       padding: 1.5rem;
     }
     
     .hero-stats {
       gap: 1rem;
-    }
-    
-    .feature-item {
-      margin-bottom: 0.8rem;
     }
     
     .floating-shape {
@@ -597,44 +563,3 @@
   }
 </style>
 
-<script>
-function scrollToForm() {
-  document.getElementById('case-form').scrollIntoView({ 
-    behavior: 'smooth',
-    block: 'center'
-  });
-}
-
-// Handle hero form submission
-document.addEventListener('DOMContentLoaded', function() {
-  const heroForm = document.getElementById('heroForm');
-  
-  if (heroForm) {
-    heroForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const fullName = document.getElementById('fullName').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const serviceType = document.getElementById('serviceType').value;
-      const audienceSize = document.getElementById('audienceSize').value;
-      
-      if (!fullName || !email || !serviceType || !audienceSize) {
-        alert('Por favor, preencha todos os campos obrigatórios.');
-        return;
-      }
-      
-      // Construct WhatsApp message
-      let message = `Interesse em SaaS + WhatsApp + IA - Convexa\n\nOlá! Tenho interesse em ter meu próprio app SaaS com a Convexa.\n\n*Nome:* ${fullName}\n*Email:* ${email}\n*Tipo de Produto:* ${serviceType}\n*Audiência:* ${audienceSize}`;
-      
-      message += `\n\nGostaria de saber mais sobre como a Convexa pode criar um app para gerar recorrência no meu negócio. Obrigado!`;
-      
-      // Encode message for URL
-      const encodedMessage = encodeURIComponent(message);
-      
-      // Open WhatsApp with the message
-      const whatsappUrl = `https://wa.me/message/2WOWTII2LT3OK1?text=${encodedMessage}`;
-      window.open(whatsappUrl, '_blank');
-    });
-  }
-});
-</script>

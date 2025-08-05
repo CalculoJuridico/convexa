@@ -1,0 +1,53 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependencies
+node_modules/
+functions/node_modules/
+
+# Environment files
+.env
+.env.*
+functions/.env
+functions/.env.*
+
+# Logs
+*.log
+functions/*.log
+
+# Firebase
+.firebase/
+firebase-debug.log
+ui-debug.log
+functions/firebase-debug.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Development files
+README.md
+CLAUDE.md
+docs/
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Build artifacts
+build/
+temp/
+tmp/

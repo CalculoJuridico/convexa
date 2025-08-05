@@ -37,6 +37,11 @@ yarn-error.log*
 # Firebase
 .firebase/
 firebase-debug.log
+ui-debug.log
+functions/node_modules/
+functions/.env
+functions/.env.local
+functions/firebase-debug.log
 
 # Google Cloud
 .gcloud/

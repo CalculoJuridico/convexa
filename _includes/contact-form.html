@@ -160,6 +160,11 @@
                 </div>
               </div>
               
+              <!-- Cloudflare Turnstile -->
+              <div class="form-group mb-4">
+                <div class="cf-turnstile d-flex justify-content-center" data-sitekey="0x4AAAAAABoXZntkuGVhuFtt"></div>
+              </div>
+              
               <div class="form-check mb-4">
                 <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
                 <label class="form-check-label small" for="privacyPolicy">
@@ -243,15 +248,19 @@
   </div>
 </section>
 
+<!-- Cloudflare Turnstile Script -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 <script>
 // Contact form handling
 document.addEventListener('DOMContentLoaded', function() {
   const contactForm = document.getElementById('caseForm');
   
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
       e.preventDefault();
       
+      // Get form values
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
@@ -260,33 +269,111 @@ document.addEventListener('DOMContentLoaded', function() {
       const platform = document.getElementById('platform').value;
       const additionalInfo = document.getElementById('additional_info').value.trim();
       
+      // Get Turnstile token
+      const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value;
+      
+      // Validate required fields
       if (!name || !email || !serviceType || !audienceSize || !platform) {
-        alert('Por favor, preencha todos os campos obrigatórios.');
+        showContactMessage('Por favor, preencha todos os campos obrigatórios.', 'error');
         return;
       }
       
-      // Construct WhatsApp message
-      let message = `Interesse em SaaS + WhatsApp + IA - Convexa\n\nOlá! Tenho interesse em ter meu próprio app SaaS com a Convexa.\n\n*Dados do Influenciador:*\n*Nome:* ${name}\n*Email:* ${email}`;
-      
-      if (phone) {
-        message += `\n*Telefone:* ${phone}`;
+      // Validate Turnstile
+      if (!turnstileToken) {
+        showContactMessage('Por favor, complete a verificação de segurança.', 'error');
+        return;
       }
       
-      message += `\n*Tipo de Produto:* ${serviceType}\n*Audiência:* ${audienceSize}\n*Plataforma:* ${platform}`;
+      // Show loading state
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitButton.innerHTML;
+      submitButton.disabled = true;
+      submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
       
-      if (additionalInfo) {
-        message += `\n*Sobre o Negócio:* ${additionalInfo}`;
+      try {
+        // Prepare data for Firebase function
+        const formData = {
+          fullName: name,
+          email: email,
+          whatsapp: phone || '',
+          serviceType: serviceType,
+          audienceSize: audienceSize,
+          businessDescription: `Plataforma: ${platform}${additionalInfo ? '. ' + additionalInfo : ''}`,
+          turnstileToken: turnstileToken
+        };
+        
+        // Submit to Firebase function
+        const response = await fetch('https://us-central1-cj-marketing-228913.cloudfunctions.net/submitSaasForm', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          // Show success message
+          showContactMessage('Formulário enviado com sucesso! Redirecionando para o WhatsApp...', 'success');
+          
+          // Open WhatsApp after a short delay
+          setTimeout(() => {
+            if (result.whatsappUrl) {
+              window.open(result.whatsappUrl, '_blank');
+            }
+            
+            // Reset form after successful submission
+            contactForm.reset();
+            // Reset Turnstile
+            if (window.turnstile) {
+              window.turnstile.reset();
+            }
+          }, 2000);
+          
+        } else {
+          showContactMessage(result.message || 'Erro ao enviar formulário. Tente novamente.', 'error');
+        }
+        
+      } catch (error) {
+        console.error('Contact form submission error:', error);
+        showContactMessage('Erro de conexão. Verifique sua internet e tente novamente.', 'error');
+      } finally {
+        // Restore button state
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalText;
       }
-      
-      message += `\n\nGostaria de saber mais sobre como a Convexa pode criar um app para gerar recorrência no meu negócio. Obrigado!`;
-      
-      // Encode message for URL
-      const encodedMessage = encodeURIComponent(message);
-      
-      // Open WhatsApp with the message
-      const whatsappUrl = `https://wa.me/message/2WOWTII2LT3OK1?text=${encodedMessage}`;
-      window.open(whatsappUrl, '_blank');
     });
+  }
+  
+  // Show message function for contact form
+  function showContactMessage(message, type) {
+    // Remove existing messages
+    const existingMessage = document.querySelector('.contact-form-message');
+    if (existingMessage) {
+      existingMessage.remove();
+    }
+    
+    // Create message element
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `contact-form-message alert ${type === 'success' ? 'alert-success' : 'alert-danger'} mt-3`;
+    messageDiv.innerHTML = `
+      <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle'} me-2"></i>
+      <span>${message}</span>
+    `;
+    
+    // Insert message after the form
+    const form = document.getElementById('caseForm');
+    form.parentNode.insertBefore(messageDiv, form.nextSibling);
+    
+    // Auto-remove success messages after 5 seconds
+    if (type === 'success') {
+      setTimeout(() => {
+        if (messageDiv.parentNode) {
+          messageDiv.remove();
+        }
+      }, 5000);
+    }
   }
 });
 </script>
