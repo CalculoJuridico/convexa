@@ -52,6 +52,10 @@
   <!-- WhatsApp Button -->
   {% include whatsapp-button.html %}
   
+  <!-- Toast Notifications Container -->
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+    <!-- Toast notifications will be added here dynamically -->
+  </div>
   
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -64,6 +68,65 @@
   
   <!-- Custom JS -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
+  <!-- Toast Utility -->
+  <script>
+    // Toast notification utility
+    function showToast(message, type = 'success', duration = 5000) {
+      const toastContainer = document.querySelector('.toast-container');
+      if (!toastContainer) return;
+      
+      // Create unique ID for toast
+      const toastId = 'toast-' + Date.now();
+      
+      // Toast types and their corresponding Bootstrap classes and icons
+      const toastTypes = {
+        success: { class: 'text-bg-success', icon: 'fas fa-check-circle' },
+        error: { class: 'text-bg-danger', icon: 'fas fa-exclamation-triangle' },
+        warning: { class: 'text-bg-warning', icon: 'fas fa-exclamation-circle' },
+        info: { class: 'text-bg-info', icon: 'fas fa-info-circle' }
+      };
+      
+      const toastType = toastTypes[type] || toastTypes.success;
+      
+      // Create toast HTML
+      const toastHTML = `
+        <div id="${toastId}" class="toast ${toastType.class}" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header ${toastType.class}">
+            <i class="${toastType.icon} me-2"></i>
+            <strong class="me-auto">${type === 'success' ? 'Sucesso!' : type === 'error' ? 'Erro' : type === 'warning' ? 'Atenção' : 'Informação'}</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Fechar"></button>
+          </div>
+          <div class="toast-body fw-medium">
+            ${message}
+          </div>
+        </div>
+      `;
+      
+      // Add toast to container
+      toastContainer.insertAdjacentHTML('beforeend', toastHTML);
+      
+      // Initialize and show toast
+      const toastElement = document.getElementById(toastId);
+      const toast = new bootstrap.Toast(toastElement, {
+        delay: duration,
+        autohide: true
+      });
+      
+      // Show toast with animation
+      toast.show();
+      
+      // Remove toast element after it's hidden
+      toastElement.addEventListener('hidden.bs.toast', function() {
+        toastElement.remove();
+      });
+      
+      return toast;
+    }
+    
+    // Make showToast globally available
+    window.showToast = showToast;
+  </script>
   <script src="{{ '/assets/js/dossier-animation.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/hero-animation.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/judicial-animation.js' | relative_url }}"></script>

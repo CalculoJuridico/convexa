@@ -274,13 +274,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Validate required fields
       if (!name || !email || !serviceType || !audienceSize || !platform) {
-        showContactMessage('Por favor, preencha todos os campos obrigatórios.', 'error');
+        if (window.showToast) {
+          showToast('Por favor, preencha todos os campos obrigatórios.', 'warning');
+        }
         return;
       }
       
       // Validate Turnstile
       if (!turnstileToken) {
-        showContactMessage('Por favor, complete a verificação de segurança.', 'error');
+        if (window.showToast) {
+          showToast('Por favor, complete a verificação de segurança.', 'warning');
+        }
         return;
       }
       
@@ -314,30 +318,27 @@ document.addEventListener('DOMContentLoaded', function() {
         const result = await response.json();
         
         if (result.success) {
-          // Show success message
-          showContactMessage('Formulário enviado com sucesso! Redirecionando para o WhatsApp...', 'success');
+          // Show toast notification
+          if (window.showToast) {
+            showToast('Formulário enviado com sucesso! Obrigado pelo seu interesse.', 'success', 3000);
+          }
           
-          // Open WhatsApp after a short delay
+          // Redirect to thank you page after a short delay
           setTimeout(() => {
-            if (result.whatsappUrl) {
-              window.open(result.whatsappUrl, '_blank');
-            }
-            
-            // Reset form after successful submission
-            contactForm.reset();
-            // Reset Turnstile
-            if (window.turnstile) {
-              window.turnstile.reset();
-            }
-          }, 2000);
+            window.location.href = '/obrigado/';
+          }, 1500);
           
         } else {
-          showContactMessage(result.message || 'Erro ao enviar formulário. Tente novamente.', 'error');
+          if (window.showToast) {
+            showToast(result.message || 'Erro ao enviar formulário. Tente novamente.', 'error');
+          }
         }
         
       } catch (error) {
         console.error('Contact form submission error:', error);
-        showContactMessage('Erro de conexão. Verifique sua internet e tente novamente.', 'error');
+        if (window.showToast) {
+          showToast('Erro de conexão. Verifique sua internet e tente novamente.', 'error');
+        }
       } finally {
         // Restore button state
         submitButton.disabled = false;

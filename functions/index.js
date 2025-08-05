@@ -214,18 +214,11 @@ exports.submitSaasForm = functions.https.onRequest(async (req, res) => {
       functions.logger.warn('Slack webhook failed, but form was saved');
     }
 
-    // Generate WhatsApp URL for response
-    const whatsappMessage = `*Interesse em SaaS Personalizado - Convexa*\n\nOlá! Tenho interesse em ter meu próprio app SaaS com a Convexa.\n\n*👤 Nome:* ${formData.fullName}\n*📧 Email:* ${formData.email}\n*📱 WhatsApp:* ${formData.whatsapp}\n*🎯 Tipo de Produto:* ${formData.serviceType}\n*👥 Audiência:* ${formData.audienceSize}\n${formData.revenue ? `*💰 Faturamento:* ${formData.revenue}\n` : ''}${formData.businessDescription ? `\n*📝 Sobre o negócio:*\n${formData.businessDescription}\n` : ''}\nGostaria de saber mais sobre como a Convexa pode criar um app para gerar recorrência no meu negócio. Obrigado!`;
-    
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappUrl = `https://wa.me/message/2WOWTII2LT3OK1?text=${encodedMessage}`;
-
     // Return success response
     res.status(200).json({
       success: true,
-      message: 'Form submitted successfully!',
+      message: 'Formulário enviado com sucesso! Nossa equipe entrará em contato em breve.',
       submissionId: submissionId,
-      whatsappUrl: whatsappUrl,
       slackNotified: slackSent
     });
 
